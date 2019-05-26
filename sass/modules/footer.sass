@@ -11,6 +11,11 @@ footer
         font-style: 32px
     .footer-hover
         padding-bottom: 30%
+    .footer-menu
+        a
+            position: absolute
+            bottom: 0
+            margin: 0 0 20px 15px
     .card
         padding: 3.2rem 0 2rem 0
         margin-top: -20px
@@ -28,8 +33,8 @@ footer
             font-weight: bold
             font-size: 1.6rem
             line-height: 1.6rem
-        .form-control::placeholder
-            color: $dark-color
+            &::placeholder
+                color: $dark-color
         .btn-secondary
             width: 100%
             background: linear-gradient(182.45deg, #FFD216 -80.61%, #FFA609 194.68%)
@@ -43,8 +48,16 @@ footer
             justify-content: flex-end
             align-items: center
 
-@media (max-width: 425px)
+@media (max-width: 575px)
     footer
         background-image: url('../img/logo-white.svg')
         background-size: 30%
-        background-position: center 95%
+        background-position: center 80%
+        .footer-menu
+            a
+                margin: 0 0 20px 0
+            .col
+                display: flex
+                justify-content: center
+        .footer-hover
+            padding-bottom: 45%
