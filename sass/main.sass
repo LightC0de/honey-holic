@@ -1,2 +1,28 @@
-@import 'modules/test'
+@import 'vendors/normalize'
+@import 'modules/mainpage' 
 @import 'colors'
+
+
+html, body
+    font-size: 10px
+
+body
+    background-color: $white-color
+    color: $dark-color
+    font-family: 'Exo 2', sans-serif
+
+// Fonts
+h2
+    font-size: 4.8rem
+    font-weight: bold
+    line-height: 38px
+
+@media (max-width: 500px)
+    html, body
+        font-size: 7px
+
+// Sloping transition
+.sloping-transition:before
+    content: ''
+    border-bottom: 66px solid red
+    border-left: 1800px solid transparent
