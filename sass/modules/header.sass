@@ -1,21 +1,19 @@
-$margin-menu: 0px
-.blockone 
-    margin: $margin-menu 0px 0px 0px
-    padding: 16px 0px 16px 0px
-.background 
-    position: absolute
-    top: 89px + $margin-menu
-    height: 58px
-    width: 100vw
-    opacity: 0.1
-    background-color: #B9C1D8
-.blocktwo
-    height: 58px
+@import '../colors'
+.navbar
+    padding: 0px
+.main 
+    padding: 16px 0px 
+.menu
+    background-color: rgba(185,193,216,0.1)
+// logo
 .honey-holic 
     display: block
     height: 57px	
     width: 86px
     margin: 0px auto
+
+
+// button basket, Honey club, select language
 .btn-menu
     display: block
     font-weight: bold
@@ -28,19 +26,19 @@ $margin-menu: 0px
     box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18);
 .btn-club
     border: 2px solid #E2E2E7
-    color: #1D1D1B
-    font-family: "Exo 2"
+    color: $dark-color
 .btn-shop
     display: block
     height: 46px
     width: 137px //134
-    color: #1D1D1B
+    color: $dark-color
     font-size: 16px
     line-height: 16px
     margin: 7px 0px 4px 0px
     text-decoration: none
-    font-family: "Exo 2"
-
+    &:hover
+        text-decoration: none
+        color: $dark-color
     img
         display: inline-block
         height: 46px
@@ -48,35 +46,53 @@ $margin-menu: 0px
         border-radius: 23px
         box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
         margin: 0px 14px 0px 0px
-.btn-shop:hover 
-    text-decoration: none
-    color: #1D1D1B
 .btn-language
     display: block
     height: 18px
     width: 60px
-    color: #1D1D1B
+    color: $dark-color
     font-size: 16px
     font-weight: bold
     line-height: 18px
     margin: 21px 0px 18px 0px
     text-decoration: none
-    font-family: "Exo 2"
-.btn-language:hover
-    text-decoration: none
-    color: #1D1D1B
-.menu-link
+    &:hover
+        text-decoration: none
+        color: $dark-color
+
+
+
+// menu
+.nav-link
     display: block
-    margin: 20px 10px
+    margin: 20px 32px
+    padding: 0px
     text-decoration: none
-    color: #1D1D1B
+    color: $dark-color
     height: 18px
     font-size: 16px
     font-weight: bold
     line-height: 18px
-    font-family: "Exo 2"
-.menu-link:hover
-    text-decoration: none
-    color: #1D1D1B
-.dropdown-toggle::after 
+    &:hover
+        color: $dark-color
+.navbar-light .navbar-nav .nav-link
+    color: $dark-color
+    &:hover
+        color: $dark-color
+@media (max-width: 1025px)
+    .nav-link
+        margin: 20px 20px
+@media (max-width: 885px)
+    .nav-link
+        margin: 20px 14px
+@media (max-width: 810px)
+    .nav-link
+        margin: 20px 5px
+.navbar-expand-md 
+    .navbar-nav 
+        .nav-link
+            padding: 0px
+.navbar-nav
+    margin: 0px auto
+.dropdown-toggle::after
     display: none
