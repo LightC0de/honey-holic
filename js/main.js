@@ -1,4 +1,5 @@
 $('.stock-slider').slick({
+    autoplay: true,
     dots: true,
     dotsClass: "my-dots",
     appendDots: $(".stock-slider-nav"),
