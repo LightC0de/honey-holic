@@ -392,10 +392,15 @@ footer {
       padding-bottom: 45%; } }
 
 .shop {
-  background-color: #ffffff; }
+  background-color: #fbfcfd; }
   .shop-sidebar {
-    padding-top: 40px;
-    height: 100vh; }
+    background-color: red;
+    padding: 4rem 0 0 1%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 23.2%;
+    text-align: center; }
     .shop-sidebar .card, .shop-sidebar .card-product {
       border: none;
       -webkit-box-shadow: none;
@@ -408,17 +413,20 @@ footer {
         line-height: 1.8rem;
         border: none;
         padding: 0; }
-        .shop-sidebar .card-header span:after {
-          content: url("../img/drop-down.svg");
-          margin-left: 18px; }
-        .shop-sidebar .card-header span:hover {
-          cursor: pointer;
-          -webkit-user-select: none;
-          -moz-user-select: none;
-          -ms-user-select: none;
-          user-select: none; }
+        .shop-sidebar .card-header span {
+          cursor: pointer; }
+          .shop-sidebar .card-header span:after {
+            content: url("../img/drop-down.svg");
+            margin-left: 18px; }
+          .shop-sidebar .card-header span:hover {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none; }
   .shop-content {
-    background-color: #fbfcfd; }
+    padding: 2.4rem 0 5.4rem 0; }
+    .shop-content .card-product {
+      margin-top: 3rem; }
 
 .card, .card-product {
   background-color: #ffffff;
@@ -426,6 +434,29 @@ footer {
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 22px 0 rgba(197, 197, 197, 0.45);
   box-shadow: 0 10px 22px 0 rgba(197, 197, 197, 0.45); }
+
+.card-product {
+  padding: 2rem;
+  font-size: 1.4rem;
+  line-height: 2rem; }
+  .card-product p {
+    text-align: left;
+    margin: 0.7rem 0 1.9rem 0; }
+
+.btn-primary {
+  background-color: #80ba38;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 7px 7px rgba(147, 211, 67, 0.179716);
+  box-shadow: 0px 7px 7px rgba(147, 211, 67, 0.179716);
+  border-radius: 23px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  border: 0px solid black;
+  text-align: center;
+  padding: 1.4rem 6.6rem 1.6rem 6.6rem;
+  cursor: pointer; }
+  .btn-primary:hover {
+    background-color: #73a632; }
 
 html, body {
   font-size: 10px; }

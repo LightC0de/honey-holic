@@ -1,8 +1,14 @@
 .shop
-    background-color: $white-color
+    background-color: $bg-shop
     &-sidebar
-        padding-top: 40px
-        height: 100vh
+        background-color: red
+        // background-color: $white-color
+        padding: 4rem 0 0 1%
+        height: 100%
+        position: absolute
+        left: 0
+        width: 23.2%
+        text-align: center
         .card
             border: none
             box-shadow: none
@@ -15,11 +21,13 @@
                 border: none
                 padding: 0
                 span
+                    cursor: pointer
                     &:after
                         content: url('../img/drop-down.svg')
                         margin-left: 18px
                     &:hover
-                        cursor: pointer
                         user-select: none
     &-content
-        background-color: $bg-shop
+        padding: 2.4rem 0 5.4rem 0
+        .card-product
+            margin-top: 3rem
