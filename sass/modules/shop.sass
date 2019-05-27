@@ -1,28 +1,25 @@
-@import '../colors'
-@import '../components/card'
-
 .shop
     background-color: $white-color
-    .card
-        border: none
-        box-shadow: none
-        margin-bottom: 48px
-        &-header
-            background-color: $white-color
-            font-weight: bold
-            font-size: 1.6rem
-            line-height: 1.8rem
-            border: none
-            padding: 0
-            span
-                &:after
-                    content: url('../img/drop-down.svg')
-                    margin-left: 18px
-                &:hover
-                    cursor: pointer
-                    user-select: none
     &-sidebar
         padding-top: 40px
         height: 100vh
+        .card
+            border: none
+            box-shadow: none
+            margin-bottom: 48px
+            &-header
+                background-color: $white-color
+                font-weight: bold
+                font-size: 1.6rem
+                line-height: 1.8rem
+                border: none
+                padding: 0
+                span
+                    &:after
+                        content: url('../img/drop-down.svg')
+                        margin-left: 18px
+                    &:hover
+                        cursor: pointer
+                        user-select: none
     &-content
         background-color: $bg-shop

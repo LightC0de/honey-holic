@@ -307,7 +307,7 @@ template {
 [hidden] {
   display: none; }
 
-.card {
+.card, .card-product {
   background-color: #ffffff;
   color: #1d1d1b;
   border-radius: 10px;
@@ -328,32 +328,32 @@ footer {
     position: absolute;
     bottom: 0;
     margin: 0 0 20px 15px; }
-  footer .card {
+  footer .card, footer .card-product {
     padding: 3.2rem 0 2rem 0;
     margin-top: -20px; }
-    footer .card h2 {
+    footer .card h2, footer .card-product h2 {
       font-size: 3.2rem;
       margin-bottom: 2rem; }
-    footer .card .form-control, footer .card .btn-secondary {
+    footer .card .form-control, footer .card-product .form-control, footer .card .btn-secondary, footer .card-product .btn-secondary {
       height: 5.8rem;
       border-radius: 100px;
       border: none; }
-    footer .card .form-control {
+    footer .card .form-control, footer .card-product .form-control {
       background-color: #f8f8fb;
       height: 58px;
       padding: 0 4rem;
       font-weight: bold;
       font-size: 1.6rem;
       line-height: 1.6rem; }
-      footer .card .form-control::-webkit-input-placeholder {
+      footer .card .form-control::-webkit-input-placeholder, footer .card-product .form-control::-webkit-input-placeholder {
         color: #1d1d1b; }
-      footer .card .form-control:-ms-input-placeholder {
+      footer .card .form-control:-ms-input-placeholder, footer .card-product .form-control:-ms-input-placeholder {
         color: #1d1d1b; }
-      footer .card .form-control::-ms-input-placeholder {
+      footer .card .form-control::-ms-input-placeholder, footer .card-product .form-control::-ms-input-placeholder {
         color: #1d1d1b; }
-      footer .card .form-control::placeholder {
+      footer .card .form-control::placeholder, footer .card-product .form-control::placeholder {
         color: #1d1d1b; }
-    footer .card .btn-secondary {
+    footer .card .btn-secondary, footer .card-product .btn-secondary {
       width: 100%;
       background: -webkit-linear-gradient(267.55deg, #FFD216 -80.61%, #FFA609 194.68%);
       background: -o-linear-gradient(267.55deg, #FFD216 -80.61%, #FFA609 194.68%);
@@ -391,41 +391,41 @@ footer {
     footer .footer-hover {
       padding-bottom: 45%; } }
 
-.card {
+.shop {
+  background-color: #ffffff; }
+  .shop-sidebar {
+    padding-top: 40px;
+    height: 100vh; }
+    .shop-sidebar .card, .shop-sidebar .card-product {
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      margin-bottom: 48px; }
+      .shop-sidebar .card-header {
+        background-color: #ffffff;
+        font-weight: bold;
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+        border: none;
+        padding: 0; }
+        .shop-sidebar .card-header span:after {
+          content: url("../img/drop-down.svg");
+          margin-left: 18px; }
+        .shop-sidebar .card-header span:hover {
+          cursor: pointer;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
+  .shop-content {
+    background-color: #fbfcfd; }
+
+.card, .card-product {
   background-color: #ffffff;
   color: #1d1d1b;
   border-radius: 10px;
   -webkit-box-shadow: 0 10px 22px 0 rgba(197, 197, 197, 0.45);
   box-shadow: 0 10px 22px 0 rgba(197, 197, 197, 0.45); }
-
-.shop {
-  background-color: #ffffff; }
-  .shop .card {
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    margin-bottom: 48px; }
-    .shop .card-header {
-      background-color: #ffffff;
-      font-weight: bold;
-      font-size: 1.6rem;
-      line-height: 1.8rem;
-      border: none;
-      padding: 0; }
-      .shop .card-header span:after {
-        content: url("../img/drop-down.svg");
-        margin-left: 18px; }
-      .shop .card-header span:hover {
-        cursor: pointer;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none; }
-  .shop-sidebar {
-    padding-top: 40px;
-    height: 100vh; }
-  .shop-content {
-    background-color: #fbfcfd; }
 
 html, body {
   font-size: 10px; }
