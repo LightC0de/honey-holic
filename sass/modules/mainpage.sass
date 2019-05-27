@@ -2,11 +2,11 @@
 
 /* STOCK SLIDER */
 
-.right
+section.mainpage-stock .right
     width: 50%
     position: absolute
     right: 0
-    padding: 0 !important
+    padding: 0
 
 .stock-text
     color: $dark-color
@@ -21,29 +21,33 @@
     a
         cursor: pointer
 
-    .slick-list::after
-        display: block
-        position: absolute
-        background: linear-gradient(90deg, transparent 0%, white 50%)
-        height: 200%
-        width: 50%
-        margin-top: -50%
-        content: ''
-        right: 0
+    .slick-list
+        margin: 0 -15px -10px
+        width: 135% 
 
-    .slick-list::before
-        display: block
-        position: absolute
-        background: linear-gradient(270deg, transparent 0%, white 100%);
-        height: 100%;
-        width: 30px;
-        z-index: 1
-        content: ''
-        left: 0
+        &::after
+            display: block
+            position: absolute
+            background: linear-gradient(90deg, transparent 0%, white 50%)
+            height: 200%
+            width: 50%
+            margin-top: -50%
+            content: ''
+            right: 0
 
-    .stock-slider-block
+        &::before
+            display: block
+            position: absolute
+            background: linear-gradient(270deg, transparent 0%, white 100%);
+            height: 100%;
+            width: 30px;
+            z-index: 1
+            content: ''
+            left: 0
+
+    &-block
         border-radius: (10px)
-        padding: 20px
+        padding: 2rem
         z-index: 0
         box-shadow: (0 10px 22px 0 rgba(210,210,210,0.45))
         background: $white-color 
@@ -60,11 +64,7 @@
             text-align: center
 
     .slick-slide
-        margin: 0 30px 40px
-
-    .slick-list
-        margin: 0 -15px -10px
-        width: 135%  
+        margin: 0 30px 40px 
 
 .my-dots
     position: absolute
@@ -75,62 +75,62 @@
     text-align: right
     right: 20%
 
-.my-dots li
-    position: relative
-    display: inline-block
-    width: 8px
-    height: 8px
-    margin: 0 8px
-    padding: 0
-    cursor: pointer
+    & li
+        position: relative
+        display: inline-block
+        width: 8px
+        height: 8px
+        margin: 0 8px
+        padding: 0
+        cursor: pointer
 
-.my-dots li button
-    font-size: 0
-    line-height: 0
-    display: block
-    width: 8px
-    height: 8px
-    padding: 5px
-    cursor: pointer
-    border: 0
-    outline: none
-    background: transparent
+        & button
+            font-size: 0
+            line-height: 0
+            display: block
+            width: 8px
+            height: 8px
+            padding: 5px
+            cursor: pointer
+            border: 0
+            outline: none
+            background: transparent
 
-.my-dots li button:hover,
-.my-dots li button:focus
-    outline: none
+            &:hover,
+            &:focus
+                outline: none
 
-.my-dots li button:hover:before,
-.my-dots li button:focus:before
-    opacity: 1
+            &:hover:before,
+            &:focus:before
+                opacity: 1
 
-.my-dots li button:before
-    font-family: 'slick'
-    font-size: 6px
-    line-height: 20px
-    position: absolute
-    top: 0
-    left: 0
-    width: 8px
-    height: 8px
-    background: $black-color
-    content: ''
-    text-align: center
-    border-radius: 16px
-    margin: 3px
-    transition: .2s
+            &:before
+                font-family: 'slick'
+                font-size: 6px
+                line-height: 20px
+                position: absolute
+                top: 0
+                left: 0
+                width: 8px
+                height: 8px
+                background: $black-color
+                content: ''
+                text-align: center
+                border-radius: 16px
+                margin: 3px
+                transition: .2s
 
-.my-dots li.slick-active button:before
-    width: 13px
-    height: 13px
-    background: $orange-color
-    border-radius: (26px)
-    margin: 0
-    transition: .2s
+        &.slick-active button:before
+            width: 13px
+            height: 13px
+            background: $orange-color
+            border-radius: (26px)
+            margin: 0
+            transition: .2s
 
 @media screen and (max-width: 993px) 
 
-    .right
+    section.mainpage-stock .right
         width: 100%
         position: relative
         padding: 0 15px !important
@@ -142,14 +142,14 @@
             width: 100%
             margin: 0
 
-        .slick-list::after 
-            background: linear-gradient(90deg, transparent 0%, white 100%);
-            width: 25px
-            right: -2px 
+            &::after 
+                background: linear-gradient(90deg, transparent 0%, white 100%)
+                width: 25px
+                right: -2px 
 
-        .slick-list::before 
-            width: 25px
-            left: -2px
+            &::before 
+                width: 25px
+                left: -2px
 
         .slick-slide
             margin: 10px 25px 30px
@@ -159,15 +159,15 @@
         text-align: center
         right: inherit
 
-    .my-dots li
-        padding: 10px
+        & li
+            padding: 10px
 
-    .my-dots li button:before
-        width: 15px
-        height: 15px
+            & button:before
+                width: 15px
+                height: 15px
 
-    .my-dots li.slick-active button:before
-        width: 21px
-        height: 21px
+            &.slick-active button:before
+                width: 21px
+                height: 21px
 
 /* ======= */
