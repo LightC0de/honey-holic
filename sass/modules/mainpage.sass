@@ -2,16 +2,17 @@
 
 /* STOCK SLIDER */
 
+section.mainpage-stock p
+    color: $dark-color
+    font-size: 2.2rem
+    line-height: 2.8rem
+    margin-bottom: 2rem
+
 section.mainpage-stock .right
     width: 50%
     position: absolute
     right: 0
     padding: 0
-
-.stock-text
-    color: $dark-color
-    font-size: 2.2rem
-    line-height: 2.8rem
 
 .stock-slider
     position: relative
@@ -24,7 +25,6 @@ section.mainpage-stock .right
     .slick-list
         margin: 0 -15px -10px
         width: 135% 
-
         &::after
             display: block
             position: absolute
@@ -34,7 +34,6 @@ section.mainpage-stock .right
             margin-top: -50%
             content: ''
             right: 0
-
         &::before
             display: block
             position: absolute
@@ -55,10 +54,8 @@ section.mainpage-stock .right
         img
             width: 100%
 
-        div
+        span
             font-size: 3rem
-            line-height: 3rem
-            padding-bottom: 1rem
             font-weight: bold
             color: $dark-color
             text-align: center
@@ -83,7 +80,6 @@ section.mainpage-stock .right
         margin: 0 8px
         padding: 0
         cursor: pointer
-
         & button
             font-size: 0
             line-height: 0
@@ -95,15 +91,12 @@ section.mainpage-stock .right
             border: 0
             outline: none
             background: transparent
-
             &:hover,
             &:focus
                 outline: none
-
             &:hover:before,
             &:focus:before
                 opacity: 1
-
             &:before
                 font-family: 'slick'
                 font-size: 6px
@@ -119,7 +112,6 @@ section.mainpage-stock .right
                 border-radius: 16px
                 margin: 3px
                 transition: .2s
-
         &.slick-active button:before
             width: 13px
             height: 13px
@@ -141,12 +133,10 @@ section.mainpage-stock .right
         .slick-list
             width: 100%
             margin: 0
-
             &::after 
                 background: linear-gradient(90deg, transparent 0%, white 100%)
                 width: 25px
                 right: -2px 
-
             &::before 
                 width: 25px
                 left: -2px
@@ -161,11 +151,9 @@ section.mainpage-stock .right
 
         & li
             padding: 10px
-
             & button:before
                 width: 15px
                 height: 15px
-
             &.slick-active button:before
                 width: 21px
                 height: 21px
