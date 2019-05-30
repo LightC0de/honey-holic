@@ -1,116 +1,161 @@
 @import '../colors'
+
+
+
+
 .navbar
     padding: 0px
+
 .main 
     padding: 16px 0px 
+    .honey-holic 
+        display: block
+        height: 57px	
+        width: 86px
+        margin: 0px auto
+    .btn-menu
+        display: block
+        font-weight: bold
+        line-height: 14px
+        font-size: 1.4rem
+        height: 44px
+        width: 165px
+        border-radius: 23px
+        padding: 0px 30px
+        margin: 0px
+        box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
+    .btn-success
+        border: 2px solid #E2E2E7
+        color: $dark-color
+        background-color: $white-color
+        &:focus, &:hover, &:active, &:visited
+            background-color: $white-color
+            text-decoration: none
+            border-color: #E2E2E7
+            box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
+        &:active:focus, &:active:hover
+            border-color: #E2E2E7
+            background-color: $white-color
+            text-decoration: none
+            color: $dark-color 
+            box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
+    .btn-info
+        display: block
+        height: 46px
+        width: 150px //134
+        color: $dark-color
+        font-size: 1.6rem
+        line-height: 16px
+        padding: 0px
+        margin: 7px 0px 4px 0px
+        text-decoration: none
+        border: none
+        background-color: $white-color
+        &:focus, &:hover, &:active, &:visited
+            background-color: $white-color
+            text-decoration: none
+        &:active:focus, &:active:hover
+            background-color: $white-color
+            text-decoration: none
+            color: $dark-color 
+        img
+            display: inline-block
+            height: 46px
+            width: 46px
+            padding: 9px
+            border-radius: 23px
+            box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
+            margin-right: 14px
+    .btn-danger
+        display: block
+        height: 18px
+        width: 60px
+        color: $dark-color
+        background-color: $white-color
+        font-size: 1.6rem
+        font-weight: bold
+        line-height: 18px
+        margin: 21px 0px 18px 0px
+        text-decoration: none
+        &:focus, &:hover, &:active, &:visited
+            text-decoration: none
+            background-color: $white-color
+            color: $dark-color
+            box-shadow: none 
+        &:active:focus, &:active:hover
+            background-color: $white-color
+            text-decoration: none
+            color: $dark-color 
+            box-shadow: none 
+
+.show > .btn-danger.dropdown-toggle:focus, 
+.show > .btn-danger.dropdown-toggle:active, 
+.show > .btn-danger.dropdown-toggle:active:focus, 
+.btn-danger:not(:disabled):not(.disabled).active:focus, 
+.btn-danger:not(:disabled):not(.disabled):active:focus
+    box-shadow: none     
+
+
+
 .menu
     background-color: rgba(185,193,216,0.1)
-// logo
-.honey-holic 
-    display: block
-    height: 57px	
-    width: 86px
-    margin: 0px auto
-
-
-// button basket, Honey club, select language
-.btn-menu
-    display: block
-    font-weight: bold
-    line-height: 14px
-    font-size: 1.4rem
-    height: 44px
-    width: 165px
-    border-radius: 23px
-    padding: 0px 30px
-    margin: 0px
-    box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
-
-@media (max-width: 767px)
-    .btn-menu
-        padding: 0px 0px
-        margin: 0px auto
-        width: 165px  
-@media (min-width: 768px) and (max-width: 1023px)
-    .btn-menu
-        width: 105px
-        padding: 0px 0px
-        margin: 0px auto
-@media (min-width: 1024px) and (max-width: 1199px)
-    .btn-menu
-        width: 125px
-        padding: 0px 10px
-
-.btn-club
-    border: 2px solid #E2E2E7
-    color: $dark-color
-.btn-shop
-    display: block
-    height: 46px
-    width: 137px //134
-    color: $dark-color
-    font-size: 1.6rem
-    line-height: 16px
-    margin: 7px 0px 4px 0px
-    text-decoration: none
-    &:hover
+    .nav-link
+        display: block
+        margin: 20px 32px
+        padding: 0px
         text-decoration: none
         color: $dark-color
-    img
-        display: inline-block
-        height: 46px
-        width: 46px
-        padding: 9px
-        border-radius: 23px
-        box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
-        margin: 0px 14px 0px 0px
-.btn-language
-    display: block
-    height: 18px
-    width: 60px
-    color: $dark-color
-    font-size: 1.6rem
-    font-weight: bold
-    line-height: 18px
-    margin: 21px 0px 18px 0px
-    text-decoration: none
-    &:hover
-        text-decoration: none
-        color: $dark-color
+        height: 18px
+        font-size: 1.6rem
+        font-weight: bold
+        line-height: 18px
+        &:hover
+            color: $dark-color
 
+.navbar-light 
+    .navbar-nav 
+        .nav-link
+            color: $dark-color
+            &:hover
+                color: $dark-color
 
-
-// menu
-.nav-link
-    display: block
-    margin: 20px 32px
-    padding: 0px
-    text-decoration: none
-    color: $dark-color
-    height: 18px
-    font-size: 1.6rem
-    font-weight: bold
-    line-height: 18px
-    &:hover
-        color: $dark-color
-.navbar-light .navbar-nav .nav-link
-    color: $dark-color
-    &:hover
-        color: $dark-color
-@media (max-width: 1025px)
-    .nav-link
-        margin: 20px 20px
-@media (max-width: 885px)
-    .nav-link
-        margin: 20px 14px
-@media (max-width: 810px)
-    .nav-link
-        margin: 20px 5px
 .navbar-expand-md 
     .navbar-nav 
         .nav-link
             padding: 0px
 .navbar-nav
     margin: 0px auto
+
 .dropdown-toggle::after
     display: none
+
+@media (max-width: 767px)
+    .main 
+        .btn-menu
+            padding: 0px 0px
+            margin: 0px auto
+            width: 165px  
+@media (min-width: 768px) and (max-width: 1023px)
+    .main 
+        .btn-menu
+            width: 105px
+            padding: 0px 0px
+            margin: 0px auto
+@media (min-width: 1024px) and (max-width: 1199px)
+    .main 
+        .btn-menu
+            width: 125px
+            padding: 0px 10px
+
+@media (max-width: 1025px)
+    .menu
+        .nav-link
+            margin: 20px 20px
+@media (max-width: 885px)
+    .menu
+        .nav-link
+            margin: 20px 14px
+@media (max-width: 810px)
+    .menu
+        .nav-link
+            margin: 20px 5px

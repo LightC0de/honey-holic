@@ -5,8 +5,14 @@
     color: $white-color
     box-shadow: 0px 7px 7px rgba(147, 211, 67, 0.179716)
     border-radius: 23px
-    border: 0px solid black
-    &:hover
-        color: $dark-color
+    border: none
+    text-decoration: none
+    &:focus, &:hover, &:active, &:visited
+        color: $white-color
+        text-decoration: none
+        background: $green-color
+    &:active:focus, &:active:hover
+        text-decoration: none
+        color: $white-color
         background: $green-color
         
