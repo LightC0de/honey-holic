@@ -1,17 +1,60 @@
 @import '../colors'
 
+//#c6082c #6b0812
+//#e8580c #ca2f0d
+//#663300 #3e1c00
+//#742068 #301537
+//#f5d5a0 #f8b774
+//#50801d #085721
 
+.color-cc-62
+    background: radial-gradient(farthest-corner at center, #c6082c 0%, #c6082c 20%, #6b0812 80%, #6b0812 100%)
+.color-ec-cd
+    background: radial-gradient(farthest-corner at center, #e8580c 0%, #e8580c 20%, #ca2f0d 80%, #ca2f0d 100%)
+.color-60-30
+    background: radial-gradient(farthest-corner at center, #663300 0%, #663300 20%, #3e1c00 80%, #3e1c00 100%)
+.color-78-37
+    background: radial-gradient(farthest-corner at center, #742068 0%, #742068 20%, #301537 80%, #301537 100%)
+.color-f0-f4
+    background: radial-gradient(farthest-corner at center, #f5d5a0 0%, #f5d5a0 20%, #f8b774 80%, #f8b774 100%)
+.color-5d-01
+    background: radial-gradient(farthest-corner at center, #50801d 0%, #50801d 20%, #085721 80%, #085721 100%)
 
 
 .navbar
     padding: 0px
 
 .main 
-    padding: 16px 0px 
+    padding: 50px 0px 
+    .btn-danger //Language
+        display: block
+        height: 18px
+        width: 60px
+        color: $dark-color
+        background-color: rgba(255,255,255,0)
+        font-size: 1.6rem
+        font-weight: bold
+        line-height: 18px
+        margin: 33px 0px 34px 0px
+        text-decoration: none
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            text-decoration: none
+            background-color: rgba(255,255,255,0)
+            color: $dark-color
+            box-shadow: none
+    .tell
+        font-size: 1rem
+        margin: 9px 0px 0px 0px
+        width: 100px
+        span
+            display: block
+            margin: 9px 0px
+            height: 10px
+            width: 100px
     .honey-holic 
         display: block
-        height: 57px	
-        width: 86px
+        height: 70px	
+        width: 105px
         margin: 0px auto
     .btn-menu
         display: block
@@ -24,22 +67,18 @@
         padding: 0px 30px
         margin: 0px
         box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
-    .btn-success
+
+    .btn-success //Honey Club
         border: 2px solid #E2E2E7
         color: $dark-color
         background-color: $white-color
-        &:focus, &:hover, &:active, &:visited
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            border-color: #E2E2E7
             background-color: $white-color
             text-decoration: none
-            border-color: #E2E2E7
             box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
-        &:active:focus, &:active:hover
-            border-color: #E2E2E7
-            background-color: $white-color
-            text-decoration: none
             color: $dark-color 
-            box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
-    .btn-info
+    .btn-info //Shop
         display: block
         height: 46px
         width: 150px //134
@@ -47,18 +86,16 @@
         font-size: 1.6rem
         line-height: 16px
         padding: 0px
-        margin: 7px 0px 4px 0px
+        margin: 7px 0px 4px 15px
         text-decoration: none
         border: none
-        background-color: $white-color
-        &:focus, &:hover, &:active, &:visited
-            background-color: $white-color
+        background-color: rgba(255,255,255,0)
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            background-color: rgba(255,255,255,0)
             text-decoration: none
-        &:active:focus, &:active:hover
-            background-color: $white-color
-            text-decoration: none
-            color: $dark-color 
+            color: $dark-color       
         img
+            background-color: $white-color
             display: inline-block
             height: 46px
             width: 46px
@@ -66,27 +103,8 @@
             border-radius: 23px
             box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
             margin-right: 14px
-    .btn-danger
-        display: block
-        height: 18px
-        width: 60px
-        color: $dark-color
-        background-color: $white-color
-        font-size: 1.6rem
-        font-weight: bold
-        line-height: 18px
-        margin: 21px 0px 18px 0px
-        text-decoration: none
-        &:focus, &:hover, &:active, &:visited
-            text-decoration: none
-            background-color: $white-color
-            color: $dark-color
-            box-shadow: none 
-        &:active:focus, &:active:hover
-            background-color: $white-color
-            text-decoration: none
-            color: $dark-color 
-            box-shadow: none 
+
+    
 
 .show > .btn-danger.dropdown-toggle:focus, 
 .show > .btn-danger.dropdown-toggle:active, 
@@ -129,23 +147,7 @@
 .dropdown-toggle::after
     display: none
 
-@media (max-width: 767px)
-    .main 
-        .btn-menu
-            padding: 0px 0px
-            margin: 0px auto
-            width: 165px  
-@media (min-width: 768px) and (max-width: 1023px)
-    .main 
-        .btn-menu
-            width: 105px
-            padding: 0px 0px
-            margin: 0px auto
-@media (min-width: 1024px) and (max-width: 1199px)
-    .main 
-        .btn-menu
-            width: 125px
-            padding: 0px 10px
+
 
 @media (max-width: 1025px)
     .menu
@@ -159,3 +161,10 @@
     .menu
         .nav-link
             margin: 20px 5px
+
+@media (max-width: 991px)
+    .main
+        .tell
+            width: 300px
+            span
+                display: inline
