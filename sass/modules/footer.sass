@@ -7,26 +7,41 @@ footer
     background-image: url('../img/footer-bg.svg')
     background-repeat: no-repeat
     background-position: right bottom
-    background-size: 85%
-    .footer-hover
-        padding-bottom: 30%
-    .footer-poweredby
-        color: $dark-color
-        font-weight: bold
-        font-size: 2.0rem
-        text-align: center
-        margin: 0
-        padding-bottom: .5rem 
-        a
-            color: $primary-color
-            background: $dark-color
-            padding: 0 5px
-            border-radius: 4px
+    background-size: 100%
+    padding-bottom: 2rem
+    .footer
+        &-hover
+            padding-bottom: 30%
+        &-phones, &-email
+            display: flex
+            flex-direction: column
+            align-items: center
+            a
+                font-weight: bold
+                color: $dark-color
+                font-size: 1.5rem
+        &-poweredby
+            color: $dark-color
+            font-weight: bold
+            font-size: 2rem
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            a
+                color: $primary-color
+                background: $dark-color
+                padding: 0 5px
+                border-radius: 4px
+            p
+                margin: 0
 
-@media (max-width: 767px)
+@media (max-width: 1085px)
     footer
         background-image: url('../img/logo-white.svg')
         background-size: 40%
-        background-position: center 71%
-        .footer-hover
-            padding-bottom: 68%
+        background-position: center 51%
+        .footer
+            &-hover
+                padding-bottom: 38%
+            &-poweredby
+                font-size: 1.5rem
