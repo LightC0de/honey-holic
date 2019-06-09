@@ -15,3 +15,153 @@
         .btn-menu
             width: 125px
             padding: 0px 10px
+
+
+
+.navbar
+    padding: 0px
+
+.main 
+    padding: 50px 0px 
+    .btn-danger //Language
+        display: block
+        height: 18px
+        width: 60px
+        color: $dark-color
+        background-color: rgba(255,255,255,0)
+        font-size: 1.6rem
+        font-weight: bold
+        line-height: 18px
+        margin: 33px 0px 34px 0px
+        text-decoration: none
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            text-decoration: none
+            background-color: rgba(255,255,255,0)
+            color: $dark-color
+            box-shadow: none
+    .tell
+        font-size: 1rem
+        margin: 9px 0px 0px 0px
+        width: 100px
+        span
+            display: block
+            margin: 9px 0px
+            height: 10px
+            width: 100px
+    .honey-holic 
+        display: block
+        height: 70px	
+        width: 105px
+        margin: 0px auto
+
+    .btn-success //Honey Club
+        border: 2px solid #E2E2E7
+        color: $dark-color
+        background-color: $white-color
+        display: block
+        font-weight: bold
+        line-height: 14px
+        font-size: 1.4rem
+        height: 44px
+        width: 165px
+        border-radius: 23px
+        padding: 0px 30px
+        margin: 0px
+        box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            border-color: #E2E2E7
+            background-color: $white-color
+            text-decoration: none
+            box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
+            color: $dark-color 
+    .btn-info //Shop
+        display: block
+        height: 46px
+        width: 46px
+        color: $dark-color
+        font-size: 1.6rem
+        line-height: 16px
+        padding: 0px
+        margin: 7px 0px 4px 15px
+        text-decoration: none
+        border: none
+        border-radius: 23px
+        background-color: rgba(255,255,255,0)
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            background-color: rgba(255,255,255,0)
+            text-decoration: none
+            color: $dark-color       
+        img
+            background-color: $white-color
+            display: inline-block
+            height: 46px
+            width: 46px
+            padding: 9px
+            border-radius: 23px
+            box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
+            margin-right: 14px
+
+    
+
+.show > .btn-danger.dropdown-toggle:focus, 
+.show > .btn-danger.dropdown-toggle:active, 
+.show > .btn-danger.dropdown-toggle:active:focus, 
+.btn-danger:not(:disabled):not(.disabled).active:focus, 
+.btn-danger:not(:disabled):not(.disabled):active:focus
+    box-shadow: none     
+
+
+
+.menu
+    background-color: rgba(185,193,216,0.1)
+    .nav-link
+        display: block
+        margin: 20px 32px
+        padding: 0px
+        text-decoration: none
+        color: $dark-color
+        height: 18px
+        font-size: 1.6rem
+        font-weight: bold
+        line-height: 18px
+        &:hover
+            color: $dark-color
+
+.navbar-light 
+    .navbar-nav 
+        .nav-link
+            color: $dark-color
+            &:hover
+                color: $dark-color
+
+.navbar-expand-md 
+    .navbar-nav 
+        .nav-link
+            padding: 0px
+.navbar-nav
+    margin: 0px auto
+
+.dropdown-toggle::after
+    display: none
+
+
+
+@media (max-width: 1025px)
+    .menu
+        .nav-link
+            margin: 20px 20px
+@media (max-width: 885px)
+    .menu
+        .nav-link
+            margin: 20px 14px
+@media (max-width: 810px)
+    .menu
+        .nav-link
+            margin: 20px 5px
+
+@media (max-width: 991px)
+    .main
+        .tell
+            width: 300px
+            span
+                display: inline
