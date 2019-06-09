@@ -1,11 +1,19 @@
 .shop
     background-color: $bg-shop
+    .fix-wrapper
+        margin-top: -100vh
+    .bg
+        background-color: $white-color
+        position: fixed
+        height: 200%
+        left: 0
+        width: 30%
     &-sidebar
         background-color: $white-color
         padding: 4rem 0 0 1%
-        height: 100%
-        position: fixed
-        left: 0
+        height: 100vh
+        position: sticky
+        top: 0
         width: 23.2%
         text-align: center
         .card
@@ -30,3 +38,9 @@
         padding: 2.4rem 0 5.4rem 0
         .card-product
             margin-top: 3rem
+
+@media (max-width: 767px)
+   .shop
+        &-sidebar
+            display: none
+    
