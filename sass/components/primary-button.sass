@@ -1,18 +1,21 @@
 @import '../colors'
     
-.btn-primary
+.btn-success //Honey Club
+    border: 2px solid #E2E2E7
     background: $green-color
-    color: $white-color
-    box-shadow: 0px 7px 7px rgba(147, 211, 67, 0.179716)
+    display: block
+    font-weight: bold
+    line-height: 14px
+    font-size: 1.4rem
+    height: 44px
+    width: 196px
     border-radius: 23px
-    border: none
-    text-decoration: none
-    &:focus, &:hover, &:active, &:visited
-        color: $white-color
-        text-decoration: none
+    padding: 0px 30px
+    margin: 5px 0px
+    box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
+    &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+        border-color: #E2E2E7
         background: $green-color
-    &:active:focus, &:active:hover
         text-decoration: none
-        color: $white-color
-        background: $green-color
+        box-shadow: 0 7px 7px 0 rgba(147,211,67,0.18)
         
