@@ -1,0 +1,57 @@
+.shop
+    background-color: $bg-shop
+    .fix-wrapper
+        margin-top: -100vh
+    .bg
+        background-color: $white-color
+        position: fixed
+        height: 200%
+        left: 0
+        width: 30%
+    &-sidebar
+        background-color: $white-color
+        padding: 4rem 0 0 1%
+        height: 100vh
+        position: sticky
+        top: 0
+        width: 23.2%
+        text-align: center
+        .categories
+            border-bottom: 1px solid $dark-color
+            margin: 0 2rem 1.3rem 2rem
+            padding-bottom: 1.3rem
+            font-size: 1.3rem
+            .form-check-input, .form-check-label
+                user-select: none
+                cursor: pointer
+            p
+                font-size: 2rem
+                font-weight: bold
+        .card
+            border: none
+            box-shadow: none
+            margin-bottom: 4.8rem
+            &-header
+                background-color: $white-color
+                font-weight: bold
+                font-size: 1.6rem
+                line-height: 1.8rem
+                border: none
+                padding: 0
+                span
+                    cursor: pointer
+                    &:after
+                        content: url('../img/drop-down.svg')
+                        margin-left: 18px
+                    &:hover
+                        user-select: none
+    &-content
+        padding: 2.4rem 0 5.4rem 0
+        .card-product
+            margin-top: 3rem
+
+@media (max-width: 767px)
+   .shop
+        &-sidebar
+            display: none
+    

@@ -9,6 +9,7 @@ footer
     background-position: right bottom
     background-size: 100%
     padding-bottom: 2rem
+    position: relative
     .footer
         &-hover
             padding-bottom: 30%
@@ -21,6 +22,7 @@ footer
                 color: $dark-color
                 font-size: 1.5rem
         &-poweredby
+            order: 0
             color: $dark-color
             font-weight: bold
             font-size: 2rem
@@ -45,3 +47,13 @@ footer
                 padding-bottom: 38%
             &-poweredby
                 font-size: 1.5rem
+
+@media (max-width: 575px)
+    footer
+        background-size: 40%
+        background-position: center 33%
+        .footer
+            &-hover
+                padding-bottom: 52%
+            &-poweredby
+                order: 1
