@@ -137,12 +137,14 @@
         margin: 12px 0px
         padding-right: 14px
         border-radius: 23px
-        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+        &:focus, &:active, &:visited, &:active:focus
             background-color: $white-color
-            border: 2px solid #E2E2E7
+            border: 2px solid $primary-color
             border-left: none 
             color: $dark-color
-
+    
+    .form-control:focus ~ .input-group-append>.btn-outline-secondary
+           @extend .btn-outline-secondary:focus
 .menu
     background-color: rgba(185,193,216,0.1)
     .nav-link
