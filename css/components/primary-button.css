@@ -1,10 +1,35 @@
-.btn-primary {
+.btn-success {
+  border: 2px solid #E2E2E7;
   background: #80ba38;
+  display: block;
+  font-weight: bold;
+  line-height: 14px;
+  font-size: 1.4rem;
+  height: 44px;
+  width: 196px;
+  border-radius: 23px;
+  padding: 0px 30px;
+  margin: 5px 0px;
+  -webkit-box-shadow: 0 7px 7px 0 rgba(147, 211, 67, 0.18);
+  box-shadow: 0 7px 7px 0 rgba(147, 211, 67, 0.18); }
+  .btn-success:focus, .btn-success:hover, .btn-success:active, .btn-success:visited, .btn-success:active:focus, .btn-success:active:hover {
+    border-color: #E2E2E7;
+    background: #80ba38;
+    text-decoration: none;
+    -webkit-box-shadow: 0 7px 7px 0 rgba(147, 211, 67, 0.18);
+    box-shadow: 0 7px 7px 0 rgba(147, 211, 67, 0.18); }
+
+.btn-primary {
+  background-color: #80ba38;
   color: #ffffff;
   -webkit-box-shadow: 0px 7px 7px rgba(147, 211, 67, 0.179716);
   box-shadow: 0px 7px 7px rgba(147, 211, 67, 0.179716);
   border-radius: 23px;
-  border: 0px solid black; }
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  border: none;
+  text-align: center;
+  padding: 1.4rem 6.6rem 1.6rem 6.6rem;
+  cursor: pointer; }
   .btn-primary:hover {
-    color: #1d1d1b;
-    background: #80ba38; }
+    background-color: #73a632; }
