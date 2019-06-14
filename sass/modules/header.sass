@@ -20,72 +20,75 @@
             display: block
             height: 30px
             width: 30px
+
+.btn-danger //Language
+    display: block
+    position: absolute
+    height: 18px
+    width: 50px
+    padding: 0px  7px
+    color: $dark-color
+    background-color: $white-color
+    font-size: 1.6rem
+    font-weight: bold
+    line-height: 18px
+    border: none
+    left: calc(100% - 90px)
+    top: 10px
+    z-index: 9
+    text-decoration: none
+    &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+        text-decoration: none
+        background-color: $white-color
+        color: $dark-color
+        box-shadow: none
+        border: none
+    
+.dropdown-toggle.btn-danger 
+    span.arrow:after
+        content: '\f078'
+.dropdown-toggle:after
+    border: none
             
+.dropdown-menu.show
+    background-color: $white-color
+    min-width: auto
+    max-width: auto
+    border-radius: 9px
+    margin: 0px  
+    padding: 0px 7px
+    .dropdown-item
+        display: block
+        color: $dark-color
+        font-size: 1.6rem
+        font-weight: bold
+        min-width: auto
+        max-width: auto
+        padding: 0px
+        margin: 2px 0px
+            
+
+.show > .btn-danger.dropdown-toggle:focus, 
+.show > .btn-danger.dropdown-toggle:active, 
+.show > .btn-danger.dropdown-toggle:active:focus, 
+.show > .btn-danger.dropdown-toggle, 
+.btn-danger:not(:disabled):not(.disabled).active:focus, 
+.btn-danger:not(:disabled):not(.disabled):active:focus
+    box-shadow: none   
+    color: $dark-color
+    background-color: $white-color
+
+.show > .btn-danger.dropdown-toggle span.arrow:after
+    content: "\f077"
+        
+.dropdown-menu.show > .dropdown-item:active:focus
+    color: $dark-color
+    background-color: $white-color
+
 header
     background-color: $white-color
     .navbar
         padding: 5px 0px
-    .btn-danger //Language
-            display: block
-            position: absolute
-            height: 18px
-            width: 50px
-            padding: 0px  7px
-            color: $dark-color
-            background-color: $white-color
-            font-size: 1.6rem
-            font-weight: bold
-            line-height: 18px
-            border: none
-            left: calc(100% - 90px)
-            top: 10px
-            z-index: 9
-            text-decoration: none
-            &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
-                text-decoration: none
-                background-color: $white-color
-                color: $dark-color
-                box-shadow: none
-                border: none
-    
-    .dropdown-toggle.btn-danger 
-        span.arrow:after
-            content: '\f078'
-            
-    .dropdown-menu.show
-        background-color: $white-color
-        min-width: auto
-        max-width: auto
-        border-radius: 9px
-        margin: 0px  
-        padding: 0px 7px
-        .dropdown-item
-            display: block
-            color: $dark-color
-            font-size: 1.6rem
-            font-weight: bold
-            min-width: auto
-            max-width: auto
-            padding: 0px
-            margin: 2px 0px
-            
-
-    .show > .btn-danger.dropdown-toggle:focus, 
-    .show > .btn-danger.dropdown-toggle:active, 
-    .show > .btn-danger.dropdown-toggle:active:focus, 
-    .show > .btn-danger.dropdown-toggle, 
-    .btn-danger:not(:disabled):not(.disabled).active:focus, 
-    .btn-danger:not(:disabled):not(.disabled):active:focus
-        box-shadow: none   
-        color: $dark-color
-        background-color: $white-color
-
-    .show > .btn-danger.dropdown-toggle span.arrow:after
-        content: "\f077"
-        
-    .dropdown-menu.show > .dropdown-item:active:focus
-        color: $dark-color
-        background-color: $white-color
         
     .main 
         margin: 15px 0px 
