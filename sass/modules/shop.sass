@@ -18,20 +18,25 @@
         width: 23.2%
         text-align: center
         .categories
-            border-bottom: 1px solid $dark-color
+            border-bottom: 1px solid $grey2-color
             margin: 0 2rem 1.3rem 2rem
             padding-bottom: 1.3rem
             font-size: 1.3rem
-            .form-check-input, .form-check-label
-                user-select: none
-                cursor: pointer
+            .form-check
+                margin-bottom: 1rem
+                &-input, &-label
+                    font-size: 1.5rem
+                    line-height: 1.7rem
+                    user-select: none
+                    cursor: pointer
+
             p
                 font-size: 2rem
                 font-weight: bold
         .card
             border: none
             box-shadow: none
-            margin-bottom: 4.8rem
+            margin-bottom: 2rem
             &-header
                 background-color: $white-color
                 font-weight: bold
@@ -43,7 +48,7 @@
                     cursor: pointer
                     &:after
                         content: url('../img/drop-down.svg')
-                        margin-left: 18px
+                        margin-left: 8px
                     &:hover
                         user-select: none
     &-content
