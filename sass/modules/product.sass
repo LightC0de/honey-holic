@@ -26,12 +26,22 @@ h3
     max-width: 53px
 
 .btn-outline-primary
+    $rdius: 12px
+    font-size: 1rem
+    background-color: $green-color
+    border: none
+    color: $dark-color
     &#minus
-        border-bottom-left-radius: 5px
-        border-top-left-radius: 5px
+        border-bottom-left-radius: $rdius
+        border-top-left-radius: $rdius
     &#plus
-        border-bottom-right-radius: 5px
-        border-top-right-radius: 5px
+        border-bottom-right-radius: $rdius
+        border-top-right-radius: $rdius
+    &:focus, &:active, &:active:focus, &:hover, &:not(:disabled):not(.disabled):active
+        background-color: $green-color
+        border: none
+        color: $dark-color
+    
 fieldset
     border-radius: 6px
     height: 55px	
