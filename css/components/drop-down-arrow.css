@@ -1,0 +1,8 @@
+.dropdown-toggle span.arrow:after {
+  content: '\f078'; }
+
+.dropdown-toggle:after {
+  border: none; }
+
+.show > .dropdown-toggle span.arrow:after {
+  content: "\f077"; }
