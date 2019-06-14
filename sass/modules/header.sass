@@ -1,9 +1,26 @@
 .up
-    position: fixed
-    font-size: 35px
-    z-index: 5
-    left: calc(100% - 80px)
+    position: fixed 
+    z-index: 9
+    left: calc(100% - 60px)
     top: calc(100% - 80px)
+    a
+        color: $primary-color
+        background: $dark-color
+        font-size: 5rem
+        opacity: 0.7
+        cursor: pointer
+        display: block
+        height: 40px
+        width: 40px
+        border-radius: 38px
+        i::before
+            position: relative
+            top: -19px
+            margin-left: 4px 
+            display: block
+            height: 30px
+            width: 30px
+            
 header
     background-color: $white-color
     .navbar
@@ -30,14 +47,19 @@ header
                 color: $dark-color
                 box-shadow: none
                 border: none
-        
+    
+    .dropdown-toggle.btn-danger 
+        span.arrow:after
+            content: '\f078'
+        span.exo
+            font-family: 'Exo 2', sans-serif
+            
     .dropdown-menu.show
         background-color: $white-color
         min-width: auto
         max-width: auto
         border-radius: 9px
-        margin: 0px 
-        
+        margin: 0px  
         padding: 0px 7px
         .dropdown-item
             display: block
@@ -48,13 +70,22 @@ header
             max-width: auto
             padding: 0px
             margin: 2px 0px
+            
 
     .show > .btn-danger.dropdown-toggle:focus, 
     .show > .btn-danger.dropdown-toggle:active, 
     .show > .btn-danger.dropdown-toggle:active:focus, 
+    .show > .btn-danger.dropdown-toggle, 
     .btn-danger:not(:disabled):not(.disabled).active:focus, 
     .btn-danger:not(:disabled):not(.disabled):active:focus
         box-shadow: none   
+        color: $dark-color
+        background-color: $white-color
+
+    .show > .btn-danger.dropdown-toggle span.arrow:after
+        content: "\f077"
+        
+    .dropdown-menu.show > .dropdown-item:active:focus
         color: $dark-color
         background-color: $white-color
         
