@@ -24,12 +24,14 @@ h3
 
 .quantity
     max-width: 53px
+    border: 1px solid $grey2-color
+    border-left: none
 
 .btn-outline-primary
     $rdius: 12px
     font-size: 1rem
-    background-color: $green-color
-    border: none
+    border: 1px solid $grey2-color
+    background-color: $white-color
     color: $dark-color
     &#minus
         border-bottom-left-radius: $rdius
@@ -39,7 +41,7 @@ h3
         border-top-right-radius: $rdius
     &:focus, &:active, &:active:focus, &:hover, &:not(:disabled):not(.disabled):active
         background-color: $green-color
-        border: none
+        border: 1px solid $grey2-color
         color: $dark-color
     
 fieldset
