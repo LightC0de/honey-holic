@@ -1,150 +1,148 @@
-header
-    background-color: $white-color
-    .navbar
-        padding: 5px 0px
-        
-    .main 
-        margin: 15px 0px 
-        .phone
-            display: block
-            margin: 18px 0px
-            border-radius: 20px
+.navbar
+    padding: 5px 0px
+    
+.main 
+    margin: 15px 0px 
+    .phone
+        display: block
+        margin: 18px 0px
+        border-radius: 20px
+        height: 40px
+        width: 40px
+        img
             height: 40px
             width: 40px
-            img
-                height: 40px
-                width: 40px
-                
-        .tell
-            display: block
-            font-size: 1.5rem
-            width: 17rem
+            
+    .tell
+        display: block
+        font-size: 1.5rem
+        width: 17rem
 
-        .honey-holic 
-            display: block
-            height: 90px	
-            width: 135px
-            margin: 0px auto
+    .honey-holic 
+        display: block
+        height: 90px	
+        width: 135px
+        margin: 0px auto
 
-        .btn-info //Shop
-            display: block
+    .btn-info //Shop
+        display: block
+        height: 46px
+        width: 46px
+        color: $dark-color
+        font-size: 1.6rem
+        line-height: 16px
+        padding: 0px
+        text-decoration: none
+        border: none
+        margin: 0px auto
+        border-radius: 23px
+        background-color: rgba(255,255,255,0)
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+            background-color: rgba(255,255,255,0)
+            text-decoration: none
+            color: $dark-color       
+        img
+            background-color: $white-color
+            display: inline-block
             height: 46px
             width: 46px
-            color: $dark-color
-            font-size: 1.6rem
-            line-height: 16px
-            padding: 0px
-            text-decoration: none
-            border: none
-            margin: 0px auto
+            padding: 9px
             border-radius: 23px
-            background-color: rgba(255,255,255,0)
-            &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
-                background-color: rgba(255,255,255,0)
-                text-decoration: none
-                color: $dark-color       
-            img
-                background-color: $white-color
-                display: inline-block
-                height: 46px
-                width: 46px
-                padding: 9px
-                border-radius: 23px
-                box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
-        .form-control
-            border: 2px solid #E2E2E7
-            border-right: none 
-            color: $dark-color
+            box-shadow: 0 7px 7px 0 rgba(255,190,16,0.18)
+    .form-control
+        border: 2px solid #E2E2E7
+        border-right: none 
+        color: $dark-color
+        background-color: $white-color
+        display: block
+        font-weight: bold
+        line-height: 14px
+        font-size: 1.4rem
+        height: 30px
+        min-width: 114px
+        min-width: 114px
+        padding: 0px 20px
+        padding-bottom: 2px
+        margin: 12px 0px
+        border-radius: 23px
+    .btn-outline-secondary
+        border: 2px solid #E2E2E7
+        border-left: none 
+        color: $dark-color
+        background-color: $white-color
+        display: block
+        font-weight: bold
+        line-height: 14px
+        font-size: 1.4rem
+        height: 30px
+        min-width: 30px
+        max-width: 30px
+        margin: 12px 0px
+        padding-right: 14px
+        border-radius: 23px
+        &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
             background-color: $white-color
-            display: block
-            font-weight: bold
-            line-height: 14px
-            font-size: 1.4rem
-            height: 30px
-            min-width: 114px
-            min-width: 114px
-            padding: 0px 20px
-            padding-bottom: 2px
-            margin: 12px 0px
-            border-radius: 23px
-        .btn-outline-secondary
             border: 2px solid #E2E2E7
             border-left: none 
             color: $dark-color
-            background-color: $white-color
-            display: block
-            font-weight: bold
-            line-height: 14px
-            font-size: 1.4rem
-            height: 30px
-            min-width: 30px
-            max-width: 30px
-            margin: 12px 0px
-            padding-right: 14px
-            border-radius: 23px
-            &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
-                background-color: $white-color
-                border: 2px solid #E2E2E7
-                border-left: none 
-                color: $dark-color
 
-    .menu
-        background-color: #f8f9fb
-        .nav-link
-            display: block
-            margin: 20px 32px
-            padding: 0px
-            text-decoration: none
+.menu
+    background-color: #f8f9fb
+    .nav-link
+        display: block
+        margin: 20px 32px
+        padding: 0px
+        text-decoration: none
+        color: $dark-color
+        height: 18px
+        font-size: 1.6rem
+        font-weight: bold
+        line-height: 18px
+        &:hover
             color: $dark-color
-            height: 18px
+    .dropdown-menu.show
+        top: 61px
+        background-color: #f8f9fb
+        min-width: auto
+        z-index: -1
+        padding: 0px
+        border: none
+        padding: 0px 7px
+        border-radius: 0px
+        margin: 0px 
+        border-bottom-right-radius: 9px
+        border-bottom-left-radius: 9px
+        .dropdown-item
+            background-color: none
+            display: block
+            color: $dark-color
             font-size: 1.6rem
             font-weight: bold
-            line-height: 18px
+            min-width: auto
+            padding: 0px
+            padding-left: 10px
+            margin: 4px 0px
+            &:hover
+                background-color: white
+                border-radius: 17px
+                
+
+.navbar-light 
+    .navbar-nav 
+        .nav-link
+            color: $dark-color
             &:hover
                 color: $dark-color
-        .dropdown-menu.show
-            top: 61px
-            background-color: #f8f9fb
-            min-width: auto
-            z-index: -1
+
+.navbar-expand-md 
+    .navbar-nav 
+        .nav-link
             padding: 0px
-            border: none
-            padding: 0px 7px
-            border-radius: 0px
-            margin: 0px 
-            border-bottom-right-radius: 9px
-            border-bottom-left-radius: 9px
-            .dropdown-item
-                background-color: none
-                display: block
-                color: $dark-color
-                font-size: 1.6rem
-                font-weight: bold
-                min-width: auto
-                padding: 0px
-                padding-left: 10px
-                margin: 4px 0px
-                &:hover
-                    background-color: white
-                    border-radius: 17px
-                   
+.navbar-nav
+    margin: 0px auto
 
-    .navbar-light 
-        .navbar-nav 
-            .nav-link
-                color: $dark-color
-                &:hover
-                    color: $dark-color
-
-    .navbar-expand-md 
-        .navbar-nav 
-            .nav-link
-                padding: 0px
-    .navbar-nav
-        margin: 0px auto
-
-    .dropdown-toggle::after
-        display: none
+.dropdown-toggle::after
+    display: none
 
 
 
