@@ -1,4 +1,52 @@
 header
+    .toggle-language
+        &.show
+            .dropdown-toggle
+                &:focus
+                    box-shadow: none
+        .dropdown-menu.show
+            background-color: $white-color
+            min-width: auto
+            max-width: auto
+            border-radius: 9px
+            margin: 0px  
+            padding: 0px 7px
+            .dropdown-item
+                display: block
+                color: $dark-color
+                font-size: 1.6rem
+                min-width: auto
+                max-width: auto
+                padding: 0px
+                margin: 2px 0px
+                &:hover
+                    font-weight: bold
+                    background-color: $white-color
+                &:active:focus
+                    color: $dark-color
+                    background-color: $white-color
+        .dropdown-toggle
+            display: block
+            position: absolute
+            height: 18px
+            width: 50px
+            padding: 0px  7px
+            color: $dark-color
+            background-color: $white-color
+            font-size: 1.6rem
+            font-weight: bold
+            line-height: 18px
+            border: none
+            left: calc(100% - 90px)
+            top: 10px
+            z-index: 9
+            text-decoration: none
+            &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+                text-decoration: none
+                background-color: $white-color
+                color: $dark-color
+                box-shadow: none
+                border: none
     .main 
         .phone
             display: block
