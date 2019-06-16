@@ -1,20 +1,16 @@
 @import '../colors'
-
 .stock-slider
     position: relative
     overflow: hidden
     box-shadow: (0 10px 22px 0 rgba(210,210,210,0.45))
     max-height: 450px
-
     a
         cursor: pointer
-
     &-block
         background: #fff
         position: relative
         height: 450px
         display: flex
-
         .stock, .discount
             display: block
             position: absolute
@@ -33,17 +29,14 @@
                 left: -10rem
                 transform: rotate(-45deg)
                 display: block
-                width: 17rem
-                
+                width: 17rem  
         .stock:after
                 content: "SALES"
         .discount:after
                 content: "DISCOUNT"
-
         img
             object-fit: cover
             width: 100%
-
         span
             font-size: 3rem
             font-weight: bold
@@ -55,7 +48,6 @@
             left: 0rem
             width: 100%
             text-align: center
-
 .slider-prev, .slider-next
     color: $primary-color
     position: absolute
@@ -71,17 +63,14 @@
     &:hover
         opacity: 1
         transition: .2s
-
 .slider-next
     right: 0
-
 .stock-slider-nav
     position: relative
     .slider-prev, .slider-next
         top: -255px
         font-size: 4rem
         line-height: 5rem
-
 .gallery2
     .slider-prev, .slider-next
         top: calc(50% - 1.5rem - 4px)
@@ -90,7 +79,6 @@
         margin-left: 30px
     .slider-next
         margin-right: 30px
-
 .my-dots
     position: relative
     display: block
@@ -98,7 +86,6 @@
     padding: 0
     list-style: none
     text-align: center
-
     & li
         position: relative
         display: inline-block
@@ -146,8 +133,6 @@
             border-radius: (26px)
             margin: 0
             transition: .2s
-
-
 #category
     div.row:nth-child(2)
         padding: 0 18rem 0 
@@ -169,17 +154,13 @@
                 bottom: 2rem
                 left: 2rem
                 font-size: 1.5rem 
-
 @media screen and (max-width: 993px) 
-
     section.mainpage-stock .right
         width: 100%
         position: relative
         padding: 0 15px !important
-
     .stock-slider
         margin-left: 0
-
         .slick-list
             width: 100%
             margin: 0
@@ -190,12 +171,10 @@
             &::before 
                 width: 25px
                 left: -2px
-   
     .my-dots 
         position: relative
         text-align: center
         right: inherit
-
         & li
             padding: 10px
             & button:before
@@ -204,5 +183,3 @@
             &.slick-active button:before
                 width: 21px
                 height: 21px
-
-/* ======= */
