@@ -1,0 +1,193 @@
+header
+    .toggle-language
+        &.show
+            .dropdown-toggle
+                &:focus
+                    box-shadow: none
+        .dropdown-menu.show
+            background-color: $white-color
+            min-width: auto
+            max-width: auto
+            border-radius: 9px
+            margin: 0px  
+            padding: 0px 7px
+            .dropdown-item
+                display: block
+                color: $dark-color
+                font-size: 1.6rem
+                min-width: auto
+                max-width: auto
+                padding: 0px
+                margin: 2px 0px
+                &:hover
+                    font-weight: bold
+                    background-color: $white-color
+                &:active:focus
+                    color: $dark-color
+                    background-color: $white-color
+        .dropdown-toggle
+            display: block
+            position: absolute
+            height: 18px
+            width: 50px
+            padding: 0px  7px
+            color: $dark-color
+            background-color: $white-color
+            font-size: 1.6rem
+            font-weight: bold
+            line-height: 18px
+            border: none
+            left: calc(100% - 90px)
+            top: 10px
+            z-index: 9
+            text-decoration: none
+            &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+                text-decoration: none
+                background-color: $white-color
+                color: $dark-color
+                box-shadow: none
+                border: none
+    .main 
+        .phone
+            display: block
+            margin: 18px 0px
+            border-radius: 20px
+            height: 40px
+            width: 40px
+            img
+                height: 40px
+                width: 40px
+        .tell
+            font-size: 1.5rem
+            a
+                color: $dark-color
+                &:hover
+                    text-decoration: none
+        .logo 
+            display: block
+            width: 13.5rem
+        .btn-primary
+            font-weight: bold
+            line-height: 1.4rem
+            font-size: 1.4rem
+            border-radius: 23px
+            padding: 1.5rem 4.7rem
+        .shopingbag
+            display: block
+            height: 4.6rem
+            width: 4.6rem
+            color: $dark-color
+            padding: 0px
+            border: none
+            margin: 0px auto
+            border-radius: 23px
+            img
+                height: 46px
+                width: 46px
+                padding: 9px
+                border-radius: 23px
+                box-shadow: 0 7px 7px 0 rgba($primary-color,0.18)
+        .form-control
+            border: 2px solid $grey4-color
+            border-right: none 
+            color: $dark-color
+            background-color: $white-color
+            display: block
+            font-weight: bold
+            line-height: 14px
+            font-size: 1.4rem
+            height: 30px
+            min-width: 114px
+            min-width: 114px
+            padding: 0px 20px
+            padding-bottom: 2px
+            margin: 12px 0px
+            border-radius: 23px
+        .btn-outline-secondary
+            border: 2px solid $grey4-color
+            border-left: none 
+            color: $dark-color
+            background-color: $white-color
+            display: block
+            font-weight: bold
+            line-height: 14px
+            font-size: 1.4rem
+            height: 30px
+            min-width: 30px
+            max-width: 30px
+            margin: 12px 0px
+            padding-right: 14px
+            border-radius: 23px
+            &:focus, &:hover, &:active, &:visited, &:active:focus, &:active:hover
+                background-color: $white-color
+                border: 2px solid $grey4-color
+                border-left: none 
+                color: $dark-color
+
+    .menu
+        background-color: $blue-color
+        .navbar-nav 
+            .nav-link
+                padding: 0px
+        .navbar-nav 
+            .nav-link
+                color: $dark-color
+                &:hover
+                    color: $dark-color
+        .dropdown-toggle::after
+            display: none
+        .nav-link
+            display: block
+            margin: 20px 32px
+            padding: 0px
+            text-decoration: none
+            color: $dark-color
+            height: 18px
+            font-size: 1.6rem
+            font-weight: bold
+            line-height: 18px
+            &:hover
+                color: $dark-color
+        .dropdown-menu.show
+            top: 61px
+            background-color: $blue-color
+            min-width: auto
+            z-index: -1
+            padding: 0px
+            border: none
+            padding: 0px 7px
+            border-radius: 0px
+            margin: 0px 
+            border-bottom-right-radius: 9px
+            border-bottom-left-radius: 9px
+            .dropdown-item
+                background-color: none
+                display: block
+                color: $dark-color
+                font-size: 1.6rem
+                font-weight: bold
+                min-width: auto
+                padding: 0px
+                padding-left: 10px
+                margin: 4px 0px
+                &:hover
+                    background-color: white
+                    border-radius: 17px
+
+@media (max-width: 1025px)
+    header
+        .menu
+            .nav-link
+                margin: 2rem
+@media (max-width: 885px)
+    header
+        .menu
+            .nav-link
+                margin: 2rem 1.4rem
+@media (max-width: 810px)
+    header
+        .menu
+            .nav-link
+                margin: 2rem 0.5rem
+
+            
