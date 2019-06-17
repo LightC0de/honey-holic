@@ -97,59 +97,72 @@ $radius: 12px
         display: flex
         flex-wrap: wrap
         justify-content: space-between
-    .synch-carousels>* 
-        width: 100%
-    .synch-carousels .right 
-        order: -1
-    .synch-carousels .left 
-        overflow: hidden
-    .synch-carousels .gallery 
-        display: none
-    .synch-carousels .slick-slide 
-        outline: none
-    .synch-carousels .slick-vertical .slick-slide 
-        border: none
-    .synch-carousels .gallery .slick-list 
-        height: auto !important
-        margin: 0 -20px
-    .synch-carousels .gallery .slick-slide 
-        cursor: pointer
-    .synch-carousels .gallery .slick-slide 
-        margin: 0 20px
-    .gallery .item 
-        width: 100%
-        padding: 50% 0
-        position: relative
-    .gallery .item-block>img 
-        width: 100%
-        left: 50%
-        top: 50
-        transform: translate(-50%, -50%)
-        position: absolute
-        box-shadow: 0 10px 22px 0 rgba(210, 210, 210, 0.45)
-        border-radius: .4rem
-        border: solid .2rem white
-    .gallery-single .item 
-        border: 2px solid $grey4-color
-        border-radius: 8px
-        box-shadow: 0 7px 7px 0 rgba($primary-color, 0.18)
-        padding: 1.5rem
+        .right 
+            order: -1
+        .left 
+            overflow: hidden
+        .gallery 
+            display: none
+        .slick-slide 
+            outline: none
+        .slick-vertical .slick-slide 
+            border: none
+        .gallery 
+            .slick-list 
+                height: auto !important
+                margin: 0 -20px
+        .gallery 
+            .slick-slide 
+                cursor: pointer
+        .gallery 
+            .slick-slide 
+                margin: 0 20px
+            .item 
+                width: 100%
+                padding: 50% 0
+                position: relative
+            .item-block>img 
+                width: 100%
+                left: 50%
+                top: 50
+                transform: translate(-50%, -50%)
+                position: absolute
+                box-shadow: 0 10px 22px 0 rgba(210, 210, 210, 0.45)
+                border-radius: .4rem
+                border: solid .2rem white
+        .gallery-single 
+                .item 
+                    border: 2px solid $grey4-color
+                    border-radius: 8px
+                    box-shadow: 0 7px 7px 0 rgba($primary-color, 0.18)
+                    padding: 1.5rem
+                .slick-arrow
+                    top: calc(50% - 2.5rem)
+                    font-size: 4rem
+                    line-height: 5rem
+                .slider-prev
+                    left: 2.5rem
+                .slider-next
+                    right: 2.5rem
     @media screen and (min-width: 480px) 
-        .synch-carousels .right 
-            margin-bottom: 20px
-        .synch-carousels .gallery 
-            display: block
+        .synch-carousels 
+            .right 
+                margin-bottom: 20px
+            .gallery 
+                display: block
     @media screen and (min-width: 1024px) 
-        .synch-carousels .right 
-            position: relative
-            width: calc(100% - 230px)
-            margin-bottom: 0
-            order: 2
-        .synch-carousels .left 
-            width: 210px
-            height: 290px
-        .synch-carousels .gallery .slick-slide 
-            margin: 0 0 0 0
-        .synch-carousels .gallery .slick-list 
-            margin: 0
-            padding: 0 14px
+        .synch-carousels 
+            .right 
+                position: relative
+                width: calc(100% - 230px)
+                margin-bottom: 0
+                order: 2
+            .left 
+                width: 210px
+                height: 290px
+            .gallery 
+                .slick-slide 
+                    margin: 0
+                .slick-list 
+                    margin: 0
+                    padding: 0 14px
