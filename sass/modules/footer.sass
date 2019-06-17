@@ -1,63 +1,59 @@
 @import '../colors'
 @import '../components/card'
+@import '../components/social-widget'
 
 footer
     background-color: $primary-color
     background-image: url('../img/footer-bg.svg')
     background-repeat: no-repeat
     background-position: right bottom
-    background-size: 85%
-    h2
-        font-style: 32px
-    .footer-hover
-        padding-bottom: 30%
-    .footer-menu
-        a
-            position: absolute
-            bottom: 0
-            margin: 0 0 20px 15px
-    .card
-        padding: 3.2rem 0 2rem 0
-        margin-top: -20px
-        h2
-            font-size: 3.2rem
-            margin-bottom: 2rem
-        .form-control, .btn-secondary
-            height: 5.8rem
-            border-radius: 100px
-            border: none
-        .form-control
-            background-color: $grey-color
-            height: 58px
-            padding: 0 4rem
-            font-weight: bold
-            font-size: 1.6rem
-            line-height: 1.6rem
-            &::placeholder
+    background-size: 100%
+    padding-bottom: 2rem
+    position: relative
+    .footer
+        &-hover
+            padding-bottom: 30%
+        &-phones, &-email
+            display: flex
+            flex-direction: column
+            align-items: center
+            a
+                font-weight: bold
                 color: $dark-color
-        .btn-secondary
-            width: 100%
-            background: linear-gradient(182.45deg, #FFD216 -80.61%, #FFA609 194.68%)
-            padding: 0 0 0 35px
+                font-size: 1.5rem
+        &-poweredby
+            order: 0
             color: $dark-color
             font-weight: bold
-            font-size: 14px
-            line-height: 14px
-            overflow: hidden
+            font-size: 2rem
             display: flex
-            justify-content: flex-end
-            align-items: center
+            justify-content: center
+            align-items: flex-end
+            a
+                color: $primary-color
+                background: $dark-color
+                padding: 0 5px
+                border-radius: 4px
+            p
+                margin: 0
+
+@media (max-width: 1085px)
+    footer
+        background-image: url('../img/logo-white.svg')
+        background-size: 40%
+        background-position: center 51%
+        .footer
+            &-hover
+                padding-bottom: 38%
+            &-poweredby
+                font-size: 1.5rem
 
 @media (max-width: 575px)
     footer
-        background-image: url('../img/logo-white.svg')
-        background-size: 30%
-        background-position: center 80%
-        .footer-menu
-            a
-                margin: 0 0 20px 0
-            .col
-                display: flex
-                justify-content: center
-        .footer-hover
-            padding-bottom: 45%
+        background-size: 40%
+        background-position: center 33%
+        .footer
+            &-hover
+                padding-bottom: 52%
+            &-poweredby
+                order: 1
