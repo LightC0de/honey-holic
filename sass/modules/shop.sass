@@ -1,21 +1,20 @@
 .shop
     background-color: $bg-shop
-    .fix-wrapper
-        margin-top: -100vh
+    position: relative
     .bg
         background-color: $white-color
-        position: fixed
+        position: absolute
         height: 200%
         left: 0
-        top: 216px
+        top: 0
         width: 30%
+        box-shadow: 0 10px 22px 0 rgba(197, 197, 197, 0.45)
     &-sidebar
         background-color: $white-color
-        padding: 4rem 0 0 1%
+        padding: 4rem 0 0 0
         height: 100vh
         position: sticky
-        top: 216px
-        width: 23.2%
+        top: 0
         text-align: center
         .categories
             border-bottom: 1px solid $grey2-color
@@ -52,7 +51,7 @@
                     &:hover
                         user-select: none
     &-content
-        padding: 2.4rem 0 5.4rem 0
+        padding: 2.4rem 0 5.4rem 3rem
         .card-product
             margin-top: 3rem
 
