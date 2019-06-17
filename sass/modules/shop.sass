@@ -4,7 +4,7 @@
     .bg
         background-color: $white-color
         position: absolute
-        height: 200%
+        height: 100%
         left: 0
         top: 0
         width: 30%
@@ -50,8 +50,35 @@
                         margin-left: 8px
                     &:hover
                         user-select: none
+    &-sorting
+        padding: 0 15px
+        &-block
+            position: relative
+            &:nth-child(n+1)
+                margin-right: 3rem
+            input
+                display: none
+                & + label:after
+                    content: ' '
+                    bottom: -50%
+                    position: absolute
+                    border: 1rem solid transparent
+                    border-top: 1rem solid $dark-color
+                &:checked + label:after
+                    bottom: 0
+                    border: 1rem solid transparent
+                    border-bottom: 1rem solid $dark-color
+            span
+                font-size: 1.5rem
+                font-weight: bold
+            label
+                cursor:pointer
+                padding: 1rem 0
+                position: relative
+                margin: 0
+
     &-content
-        padding: 2.4rem 0 5.4rem 3rem
+        padding: 1rem 0 5.4rem 3rem
         .card-product
             margin-top: 3rem
 
