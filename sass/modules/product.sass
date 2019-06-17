@@ -1,66 +1,155 @@
-img 
-    max-width: 100%
-    height: auto
-.over-visible 
-    overflow: visible
-.synch-carousels 
-    position: relative
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
-.synch-carousels>* 
-    width: 100%
-.synch-carousels .right 
-    order: -1
-.synch-carousels .left 
-    overflow: hidden
-.synch-carousels .gallery 
-    display: none
-.synch-carousels .slick-slide 
-    outline: none
-.synch-carousels .slick-vertical .slick-slide 
-    border: none
-.synch-carousels .gallery .slick-list 
-    height: auto !important
-    margin: 0 -20px
-.synch-carousels .gallery .slick-slide 
-    cursor: pointer
-.synch-carousels .gallery .slick-slide 
-    margin: 0 20px
-.gallery .item 
-    width: 100%
-    padding: 50% 0
-    position: relative
-.gallery .item-block>img 
-    width: 100%
-    left: 50%
-    top: 50
-    transform: translate(-50%, -50%)
-    position: absolute
-    box-shadow: 0 10px 22px 0 rgba(210, 210, 210, 0.45)
-    border-radius: .4rem
-    border: solid .2rem white
-.gallery-single .item 
-    border: 2px solid #E2E2E7
-    border-radius: 8px
-    box-shadow: 0 7px 7px 0 rgba(255, 190, 16, 0.18)
-    padding: 1.5rem
-@media screen and (min-width: 480px) 
-    .synch-carousels .right 
-        margin-bottom: 20px
-    .synch-carousels .gallery 
+$radius: 12px
+    
+.product
+    margin-top: 40px
+    h3
+        color: $dark-color
+        font-size: 2.5rem	
+        font-weight: bold	
+        line-height: 2rem
+
+    .text
+        margin: 23px 0px
+        color: $dark-color	
+        font-size: 1.6rem	
+        line-height: 2.2rem
+
+    .old_cost
+        opacity: 0.2	
+        color: $dark-color
+        font-size: 2rem	
+        line-height: 2rem
+        text-decoration: line-through
+    .new_cost
+        color: $green-color
+        font-size: 3rem
+        font-weight: bold	
+        line-height: 3rem
+
+    .quantity
+        border: 1px solid $grey2-color
+        border-left: none
+
+    .btn-outline-primary
+        font-size: 1rem
+        border: 1px solid $grey2-color
+        background-color: $white-color
+        color: $dark-color
+        &#minus
+            border-bottom-left-radius: $radius
+            border-top-left-radius: $radius
+        &#plus
+            border-bottom-right-radius: $radius
+            border-top-right-radius: $radius
+        &:focus, &:active, &:active:focus, &:hover, &:not(:disabled):not(.disabled):active
+            background-color: $green-color
+            border: 1px solid $grey2-color
+            color: $dark-color
+        
+    fieldset
+        border-radius: 6px
+        height: 55px	
+        width: 95px
+        color: $dark-color	
+        padding: 1px 0px 10px 13px 
+        border: 1px solid $grey3-color	
+        box-shadow: 0 7px 7px 0 rgba($primary-color,0.18)
+        legend
+            margin: 0px 
+            padding: 0px 6px
+            width: 44px
+            color: $dark-color		
+            font-size: 1.2rem
+            font-weight: bold
+            line-height: 1.2rem
+            
+    .name
+        align-content: center
+        span
+            display: block
+            width: 16rem
+            margin: 0px auto
+            color: $dark-color
+            font-size: 2.4rem	
+            font-weight: bold
+            line-height: 2.4rem	
+    .small_card
         display: block
-@media screen and (min-width: 1024px) 
-    .synch-carousels .right 
+        height: 166px
+        width: 166px
+        margin: 0px auto
+        a
+            display: block
+            height: 110px
+            width: 87px
+            margin: 28px auto
+            img
+                height: 110px
+                width: 87px
+
+    img 
+        max-width: 100%
+        height: auto
+    .over-visible 
+        overflow: visible
+    .synch-carousels 
         position: relative
-        width: calc(100% - 230px)
-        margin-bottom: 0
-        order: 2
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .synch-carousels>* 
+        width: 100%
+    .synch-carousels .right 
+        order: -1
     .synch-carousels .left 
-        width: 210px
-        height: 290px
-    .synch-carousels .gallery .slick-slide 
-        margin: 0 0 0 0
+        overflow: hidden
+    .synch-carousels .gallery 
+        display: none
+    .synch-carousels .slick-slide 
+        outline: none
+    .synch-carousels .slick-vertical .slick-slide 
+        border: none
     .synch-carousels .gallery .slick-list 
-        margin: 0
-        padding: 0 14px
+        height: auto !important
+        margin: 0 -20px
+    .synch-carousels .gallery .slick-slide 
+        cursor: pointer
+    .synch-carousels .gallery .slick-slide 
+        margin: 0 20px
+    .gallery .item 
+        width: 100%
+        padding: 50% 0
+        position: relative
+    .gallery .item-block>img 
+        width: 100%
+        left: 50%
+        top: 50
+        transform: translate(-50%, -50%)
+        position: absolute
+        box-shadow: 0 10px 22px 0 rgba(210, 210, 210, 0.45)
+        border-radius: .4rem
+        border: solid .2rem white
+    .gallery-single .item 
+        border: 2px solid $grey4-color
+        border-radius: 8px
+        box-shadow: 0 7px 7px 0 rgba($primary-color, 0.18)
+        padding: 1.5rem
+    @media screen and (min-width: 480px) 
+        .synch-carousels .right 
+            margin-bottom: 20px
+        .synch-carousels .gallery 
+            display: block
+    @media screen and (min-width: 1024px) 
+        .synch-carousels .right 
+            position: relative
+            width: calc(100% - 230px)
+            margin-bottom: 0
+            order: 2
+        .synch-carousels .left 
+            width: 210px
+            height: 290px
+        .synch-carousels .gallery .slick-slide 
+            margin: 0 0 0 0
+        .synch-carousels .gallery .slick-list 
+            margin: 0
+            padding: 0 14px
