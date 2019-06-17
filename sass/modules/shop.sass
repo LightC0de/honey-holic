@@ -1,21 +1,20 @@
 .shop
     background-color: $bg-shop
-    .fix-wrapper
-        margin-top: -100vh
+    position: relative
     .bg
         background-color: $white-color
-        position: fixed
-        height: 200%
+        position: absolute
+        height: 100%
         left: 0
-        top: 216px
+        top: 0
         width: 30%
+        box-shadow: 0 10px 22px 0 rgba(197, 197, 197, 0.45)
     &-sidebar
         background-color: $white-color
-        padding: 4rem 0 0 1%
+        padding: 4rem 0 0 0
         height: 100vh
         position: sticky
-        top: 216px
-        width: 23.2%
+        top: 0
         text-align: center
         .categories
             border-bottom: 1px solid $grey2-color
@@ -51,8 +50,38 @@
                         margin-left: 8px
                     &:hover
                         user-select: none
+    &-sorting
+        padding: 0 15px
+        &-block
+            position: relative
+            &:nth-child(n+1)
+                margin-right: 3rem
+            input
+                display: none
+                & + label:after
+                    cursor: pointer
+                    content: ' '
+                    bottom: -40%
+                    position: absolute
+                    border: .7rem solid transparent
+                    border-top: 1rem solid $dark-color
+                    transition: .2s ease-out
+                &:checked + label:after
+                    bottom: 0
+                    border: .7rem solid transparent
+                    border-bottom: 1rem solid $dark-color
+                    transition: .2s ease-out
+                    //transform: rotate(180deg) 
+            span
+                font-size: 1.5rem
+                font-weight: bold
+            label
+                padding: 1rem 0
+                position: relative
+                margin: 0
+
     &-content
-        padding: 2.4rem 0 5.4rem 0
+        padding: 1rem 0 5.4rem 3rem
         .card-product
             margin-top: 3rem
 
