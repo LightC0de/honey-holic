@@ -19,7 +19,7 @@ $('.stock-slider').slick({
 
 const $left = $(".left");
 const $gl = $(".gallery");
-const $gl2 = $(".gallery2");
+const $gl2 = $(".gallery-single");
 
 $gl.slick({
     slidesToShow: 1,
