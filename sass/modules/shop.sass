@@ -60,14 +60,17 @@
                 display: none
                 & + label:after
                     content: ' '
-                    bottom: -50%
+                    bottom: -40%
                     position: absolute
-                    border: 1rem solid transparent
+                    border: .7rem solid transparent
                     border-top: 1rem solid $dark-color
+                    transition: .2s ease-out
                 &:checked + label:after
                     bottom: 0
-                    border: 1rem solid transparent
+                    border: .7rem solid transparent
                     border-bottom: 1rem solid $dark-color
+                    transition: .2s ease-out
+                    //transform: rotate(180deg) 
             span
                 font-size: 1.5rem
                 font-weight: bold
