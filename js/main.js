@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 $('.stock-slider').slick({
     autoplay: false,
     dots: true,
@@ -63,4 +61,3 @@ $(".gallery .item").on("click", function() {
     const index = $(this).attr("data-slick-index");
     $gl2.slick("slickGoTo", index);
 });
->>>>>>> origin/master
