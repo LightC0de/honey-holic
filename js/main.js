@@ -57,7 +57,3 @@ function handleCarouselsHeight() {
 $(window).on("load", () => {
     handleCarouselsHeight();
 });
-$(".gallery .item").on("click", function() {
-    const index = $(this).attr("data-slick-index");
-    $gl2.slick("slickGoTo", index);
-});
